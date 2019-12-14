@@ -1,0 +1,82 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    height: 100vh;
+    background-color: hsl(216, 46%, 64%);
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.plans {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1440px;
+    width: 95%;
+    margin: 2em auto;
+    padding: 1.5em;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: .5em;
+}
+
+.plan {
+    flex: 1;
+    padding: 2em 4em;
+    text-align: center;
+}
+
+.plan:hover {
+    background-color: hsl(60, 5%, 96%);
+}
+
+.plan__icon {
+    width: 95px;
+    height: auto;
+    margin-bottom: 2.75em;
+}
+
+.plan__title {
+    margin-bottom: 1em;
+    color: hsl(228, 59%, 56%);
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: .15em;
+}
+
+.plan__description {
+    margin-bottom: 1.5em;
+    color: hsl(0, 3%, 63%);
+    font-size: 1rem;
+    line-height: 1.5em;
+}
+
+.plan__price { 
+    color: hsl(228, 59%, 56%);
+}
+
+.plan__price-amount {   
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.plan__price-amount::before {
+    content: '$';
+    font-size: 1.5rem;
+    font-weight: 500;
+    vertical-align: top;
+}
+
+.plan__price-billing {
+    margin-left: .25em;
+}
+
+
